@@ -19,7 +19,7 @@
     --transparent-white: hsla(0, 0%, 100%, 0.75);
     --very-light-gray: hsl(0, 0%, 95%);
 }
-body {
+main {
     min-height: 100vh;
     background-color: var(--very-light-gray);
     display: flex;
@@ -35,7 +35,7 @@ body {
 .card {
     padding: 50px;
 }
-.card h1 {
+.card h1, .card h2 {
     font-size: var(--font-size-35);
     font-weight: var(--font-weight-700);
     font-family: var(--big-font);
@@ -88,7 +88,7 @@ body {
 /* Responsive Screen Layout */
 /* Small Mobile Screen */
 @media (min-width: 320px) and (max-width: 424px) {
-    body {
+    main {
         padding: 15vh 0;
     }
     .cards-container {
@@ -113,7 +113,7 @@ body {
 }
 /* Large Mobile Screen */
 @media (min-width: 425px) and (max-width: 767px) {
-    body {
+    main {
         padding: 15vh 0;
     }
     .cards-container {
@@ -138,7 +138,7 @@ body {
 }
 /* Tablet Screen  */
 @media (min-width: 768px) and (max-width: 1023px) {
-    body {
+    main {
         padding: 15vh 0;
     }
     .cards-container {
@@ -163,7 +163,7 @@ body {
 }
 /* Large Screen */
 @media (min-width: 1024px) and (max-width: 1439px) {
-    body {
+    main {
         padding: 0;
     }
     .cards-container {
@@ -188,7 +188,7 @@ body {
 }
 /* Extre Large Screen */
 @media (min-width: 1440px) {
-    body {
+    main {
         padding: 0;
     }
     .cards-container {
